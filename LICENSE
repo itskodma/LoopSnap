@@ -1,0 +1,45 @@
+MIT License
+
+Copyright (c) 2026 veilasius
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software. Credit to the original author
+(veilas) must be clearly visible in any public fork, redistribution, or
+derivative work — whether in the source code, documentation, or an about screen.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+─────────────────────────────────────────────────────────────────────────────
+
+A NOTE FROM THE AUTHOR
+
+This is my first Swift project. I started it because I moved from Windows to
+macOS and lost access to ScreenToGif — a tool I relied on daily — and could
+not find a comparable native replacement on Mac.
+
+The code almost certainly has rough edges: patterns that a seasoned Swift or
+macOS developer would do differently, missed Swift concurrency best practices,
+AppKit quirks handled in suboptimal ways, and corners that were cut to get
+something working. I am fully aware of this and genuinely welcome it.
+
+If you spot something worth improving — architecturally, idiomatically, for
+performance, for correctness, or just for clarity — please open an issue or
+pull request and tell me. Constructive criticism is not just tolerated here,
+it is actively encouraged. This project exists partly as a learning exercise,
+and the best way to learn is to have experienced people point at the code and
+say "here is a better way."
+
+Thank you for taking the time to look at this.
