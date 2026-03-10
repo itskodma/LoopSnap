@@ -2,12 +2,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "ScreenToGif",
+    name: "LoopSnap",
     platforms: [.macOS(.v13)],
     targets: [
         .executableTarget(
-            name: "ScreenToGif",
-            path: "Sources/ScreenToGif",
+            name: "LoopSnap",
+            path: "Sources/LoopSnap",
             resources: [.process("Resources")]
         )
     ]

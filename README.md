@@ -4,6 +4,8 @@ A native macOS screen-to-GIF recorder built with Swift and SwiftUI.
 
 LoopSnap was born out of necessity. [ScreenToGif](https://www.screentogif.com/) is a fantastic Windows-only tool — and when switching to macOS means losing access to it, you build your own. LoopSnap is not a port or a clone; it is a fresh, macOS-native reimagining of the same core workflow: draw a region, record it, trim it in a timeline, and export a looping GIF.
 
+Have an idea or want to pick something up? See [TODO.md](TODO.md) for a list of small, self-contained improvements.
+
 ---
 
 ## Features
@@ -63,9 +65,8 @@ open LoopSnap.app
 loopsnap/
 ├── Package.swift                        # Swift Package Manager manifest
 ├── bundle_app.sh                        # Script to produce a .app bundle
-├── make_icon.swift                      # Utility to generate AppIcon.icns
 ├── Sources/
-│   └── ScreenToGif/                     # Main target (to be renamed LoopSnap)
+│   └── LoopSnap/                            # Main target
 │       ├── main.swift                   # App entry point & NSApplication bootstrap
 │       ├── RecorderView.swift           # Main recorder window (SwiftUI)
 │       ├── CaptureManager.swift         # ScreenCaptureKit capture logic
@@ -126,7 +127,6 @@ Open a [feature request issue](../../issues/new) describing the problem you want
 
 | Area | Notes |
 |---|---|
-| App renaming | Source target and bundle IDs still reference `ScreenToGif` — needs a clean rename to `LoopSnap` |
 | Code signing & notarization | The `.app` bundle is currently ad-hoc; proper signing would allow distribution |
 | APNG / WebP export | GIF is the current output format; APNG and WebP would reduce file size significantly |
 | Frame delay editor | Per-frame delay control in the timeline editor |

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# bundle_app.sh - Build ScreenToGif and wrap it in a proper .app bundle.
+# bundle_app.sh - Build LoopSnap and wrap it in a proper .app bundle.
 # Usage:  chmod +x bundle_app.sh && ./bundle_app.sh
 set -euo pipefail
 
-APP="ScreenToGif"
+APP="LoopSnap"
 BUNDLE="$APP.app"
 BIN=".build/debug/$APP"
 
@@ -24,7 +24,7 @@ if [ -f "$RESOURCE_BUNDLE/AppIcon.icns" ]; then
     cp "$RESOURCE_BUNDLE/AppIcon.icns" "$BUNDLE/Contents/Resources/AppIcon.icns"
 else
     # Fallback: copy directly from source
-    cp "Sources/ScreenToGif/Resources/AppIcon.icns" "$BUNDLE/Contents/Resources/AppIcon.icns"
+    cp "Sources/LoopSnap/Resources/AppIcon.icns" "$BUNDLE/Contents/Resources/AppIcon.icns"
 fi
 
 # Write Info.plist
@@ -34,19 +34,19 @@ cat > "$BUNDLE/Contents/Info.plist" <<'PLIST'
     "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleName</key><string>Screen to GIF</string>
-    <key>CFBundleDisplayName</key><string>Screen to GIF</string>
-    <key>CFBundleIdentifier</key><string>com.screentogif.app</string>
+    <key>CFBundleName</key><string>LoopSnap</string>
+    <key>CFBundleDisplayName</key><string>LoopSnap</string>
+    <key>CFBundleIdentifier</key><string>com.veilasius.loopsnap</string>
     <key>CFBundleVersion</key><string>1</string>
     <key>CFBundleShortVersionString</key><string>1.0</string>
-    <key>CFBundleExecutable</key><string>ScreenToGif</string>
+    <key>CFBundleExecutable</key><string>LoopSnap</string>
     <key>CFBundlePackageType</key><string>APPL</string>
     <key>CFBundleIconFile</key><string>AppIcon</string>
     <key>CFBundleIconName</key><string>AppIcon</string>
     <key>NSHighResolutionCapable</key><true/>
     <key>NSPrincipalClass</key><string>NSApplication</string>
     <key>NSScreenCaptureUsageDescription</key>
-    <string>Screen to GIF needs screen recording permission to capture your screen.</string>
+    <string>LoopSnap needs screen recording permission to capture your screen.</string>
 </dict>
 </plist>
 PLIST
@@ -55,4 +55,4 @@ PLIST
 touch "$BUNDLE"
 
 echo "${BUNDLE} is ready. Open with:"
-echo "   open $BUNDLE"
+echo "   open \"$BUNDLE\""

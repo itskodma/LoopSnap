@@ -5,20 +5,20 @@
             "request": "launch",
             "args": [],
             "cwd": "${workspaceFolder:screentogif}",
-            "name": "Debug ScreenToGif",
-            "target": "ScreenToGif",
+            "name": "Debug LoopSnap",
+            "target": "LoopSnap",
             "configuration": "debug",
-            "preLaunchTask": "swift: Build Debug ScreenToGif"
+            "preLaunchTask": "swift: Build Debug LoopSnap"
         },
         {
             "type": "swift",
             "request": "launch",
             "args": [],
             "cwd": "${workspaceFolder:screentogif}",
-            "name": "Release ScreenToGif",
-            "target": "ScreenToGif",
+            "name": "Release LoopSnap",
+            "target": "LoopSnap",
             "configuration": "release",
-            "preLaunchTask": "swift: Build Release ScreenToGif"
+            "preLaunchTask": "swift: Build Release LoopSnap"
         }
     ]
 }
