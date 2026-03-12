@@ -8,6 +8,18 @@ Have an idea or want to pick something up? See [TODO.md](TODO.md) for a list of 
 
 ---
 
+## Screenshots
+
+| Recorder | Zone picker | Timeline editor |
+|:---:|:---:|:---:|
+| ![Main recorder window](assets/Recorder.png) | ![Region selection overlay](assets/Zone.png) | ![Timeline / frame editor](assets/Editor.png) |
+
+### Video walkthrough
+
+<video src="assets/showcase.mp4" controls width="100%"></video>
+
+---
+
 ## Features
 
 - **Region capture** — drag to select any area of any display before recording
